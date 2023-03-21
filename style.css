@@ -9,6 +9,7 @@ head,footer{
      width: 100%;
      color: antiquewhite;
      position: fixed;
+     overflow: hidden;
 }
 head h2{
     position: absolute;

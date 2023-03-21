@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Click&Play</label>
+        <ul>
+
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="" class="">Blog</a></li>
+           <li><a href="" class="">FAQ</a></li>
+          <li><a href="" class="">About-Us</a></li>
+         <li><a href="" class="">Info</a></li>
+        </ul>
+             
+        </nav>
+    </header>
+<section>
+    <h1><i class="fas fa-music" style="color:blue;"></i>      Eminem hits Songs</h1>
+<div>
+
+        <a href=""><a onclick="play_song()" ondblclick="pause_song()">
+            <img src="audio/wallpaperflare.com_wallpaper.jpg">
+            <h3 style="color: white;">Lose your Self</h3>
+        </a><br>
+        <a href=""><a onclick="play_song1()" ondblclick="pause_song1()">
+            <img src="audio/wallpaperflare.com_wallpaper (1).jpg">
+            <h3>Slim Shady</h3>
+        </a><br>
+        <a href=""><a onclick="play_song3()" ondblclick="pause_song3()">
+            <img src="audio/3pic.jpg">
+            <h3>Without-me</h3>
+        </a>
+    </div>
+</section>
+<footer>
+    <h2> &copy; Copyright reserved.</h2>
+    <p>Full-Stack Developer & Security Researcher<br>Ankit Sharma</p>
+ </footer>
+    <script>
+
+
+var my_song = new Audio();
+my_song.src = 'emim2.mp3';
+
+   const play_song = () =>{
+    my_song.play();
+   }
+   const pause_song = () =>{
+    my_song.pause();
+   }
+
+   let my_song1 = new Audio();
+my_song1.src = 'eminm.mp3';
+
+   const play_song1 = () =>{
+    my_song1.play();
+   }
+   const pause_song1 = () =>{
+    my_song1.pause();
+   }
+
+   let my_song3 = new Audio();
+my_song3.src = 'eminm1.mp3';
+
+   const play_song3 = () =>{
+    my_song3.play();
+   }
+   const pause_song3 = () =>{
+    my_song3.pause();
+   }
+
+    </script>
+</body>
+</html>
